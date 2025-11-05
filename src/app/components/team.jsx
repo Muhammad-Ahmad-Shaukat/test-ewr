@@ -28,11 +28,11 @@ export default function Team() {
             name: 'Sajid'
         },
         {
-            image: '/salman.png',
+            image: '/Salman.png',
             name: 'Salman'
         },
         {
-            image: '/faraz.png',
+            image: '/Faraz.png',
             name: 'Faraz'
         },
         {

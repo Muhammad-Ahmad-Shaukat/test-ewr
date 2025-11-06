@@ -11,13 +11,13 @@ export default function Trusted() {
                 <p className='font-normal lg:text-[18px] text-[16px] leading-normal text-[#131316] mb-[17px]'>Empowering your business with secure, scalable user and organization management - free to start, simple to grow</p>
                 <Link href="#"  className='rounded-[10px] inline bg-[linear-gradient(90deg,#147FEA_0%,#389CFF_100%)] text-[16px] text-[#fff] py-[13px] px-[18px]'>Get in Touch</Link>
              </div>
-                <div className="w-full max-w-[552px] relative lg:h-[300px] md:h-[300px] sm:h-[250px] h-[180px] lg:mx-[0px] mx-auto">
+                <div className="w-full max-w-[552px] relative lg:h-[300px] md:h-[348px] sm:h-[323px] h-[180px] lg:mx-[0px] mx-auto">
                 <Image
                     src="/trusted.png"
                     alt="trusted"
                     width={500}
                     height={400}    
-                  className="object-contain absolute top-[-100px] lg:right-0 lg:translate-x-0 right-1/2 translate-x-1/2"
+                  className="object-contain absolute top-[-100px] w-[100%] md:max-w-[100%] sm:max-w-[300px] max-w-[300px] lg:right-0 lg:translate-x-0 right-1/2 translate-x-1/2"
                 />
                 </div>
 

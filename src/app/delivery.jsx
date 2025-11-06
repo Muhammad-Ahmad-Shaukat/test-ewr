@@ -68,7 +68,7 @@ export default function Delivery() {
                     autoplay
                     loop
                     src="/graph.json"
-                    style={{ height: "700px", width: "628px" }}
+                    style={{ height: "655px", width: "628px" }}
                   />
             </div>
         </div>
@@ -323,7 +323,7 @@ export default function Delivery() {
 <div
   style={{
     width: '469px',
-    height: '492px',
+    height: '472px',
     overflow: 'hidden',
     borderRadius: '20px',
     backgroundColor: '#DFDFDF',

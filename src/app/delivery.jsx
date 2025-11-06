@@ -323,7 +323,7 @@ export default function Delivery() {
 <div
   style={{
     width: '469px',
-    height: '472px',
+    height: '498px',
     overflow: 'hidden',
     borderRadius: '20px',
     backgroundColor: '#DFDFDF',

@@ -255,6 +255,8 @@ export default function Team() {
                                                 className="object-cover"
                                                 style={{ borderRadius: '5px' }}
                                                 sizes="92px"
+                                                quality={100}
+                                                
                                             />
                                         </div>
                                     ) : (
@@ -278,6 +280,8 @@ export default function Team() {
                                                 className="object-cover"
                                                 style={{ borderRadius: '5px' }}
                                                 sizes="92px"
+                                                quality={100}
+                                                
                                             />
                                         </div>
                                     ) : (

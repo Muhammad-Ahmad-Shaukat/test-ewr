@@ -122,7 +122,7 @@ export default function TestimonialSlider() {
               flex-direction: column;
             }
             .main-container { order: 2; }
-            .thumbs-swiper { height: 692px !important; }
+            .thumbs-swiper { height: 669px !important; }
             .thumb-card { width: 400px; height: 100%; }
           }
         `}</style>

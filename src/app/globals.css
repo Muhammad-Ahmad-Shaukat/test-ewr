@@ -646,8 +646,9 @@ video {
   padding-top: 20px !important;
   }
     .graph_animi #lottie {
-        height: 420px !important;
+        height: 369px !important;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -656,11 +657,15 @@ video {
   max-width: 100% !important;
   height: 100% !important;
 }
-
+    .integration-text {
+        margin-bottom: 189px !important;
+    }
 }
 
 @media (max-width: 600px) {
-
+    .brand-item {
+        height: 89px;
+    }
 .team-animi{
     gap: 10px !important;
   }

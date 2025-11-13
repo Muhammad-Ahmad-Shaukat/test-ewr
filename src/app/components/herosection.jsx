@@ -69,12 +69,12 @@ export default function HeroSection() {
         </div>
 
         {/* Main heading */}
-        <h1 className="w-[100%] max-w-[895px] mx-auto font-semibold lg:text-[62px] md:text-[50px] text-[32px] lg:leading-[70px] md:leading-[65px] leading-[50px] text-[#000] mb-[38px]">
+        <h1 className="w-[100%] max-w-[895px] mx-auto font-semibold lg:text-[62px] md:text-[50px] text-[32px] lg:leading-[70px] md:leading-[65px] md:px-[0px] px-[15px] leading-[50px] text-[#000] mb-[38px]">
           Your Software Partner with Unwavering Integrity
         </h1>
 
         {/* Sub-heading */}
-        <p className="w-[100%] max-w-[521px] mx-auto font-normal text-[18px] leading-[30px] text-[#000000] mb-[33px]">
+        <p className="w-[100%] max-w-[521px] mx-auto font-normal text-[18px] leading-[30px] text-[#000000] md:px-[0px] px-[15px] mb-[33px]">
           Our experienced software development team offers dedicated support tailored to your needs.
         </p>
 

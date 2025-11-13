@@ -63,7 +63,7 @@ export default function Delivery() {
          <div className='w-[100%] max-w-[100%] bg-[#DFDFDF] rounded-[20px] pt-[60px] pb-[0px] transition-all duration-300 overflow-hidden'>
             <h2 className='lg:text-[32px] text-[28px] font-semibold leading-[45px]  text-[#000] text-center relativez z-[2] w-[100%] max-w-[300px]  mx-auto mb-[15px]'>SAP Point-to-Point Integration</h2>
             <p className='text-[16px] text-[#626262] w-[100%] max-w-[333px] mx-auto text-center relative z-[2] leading-normal integration-text'>Streamline complex data flows with secure, real- time integrations for SAP systems, enhancing accuracy and operational efficiency</p>
-           <div className='graph_animi w-[100%] max-w-[100%] flex justify-center pt-[20px] mt-[-300px]'>
+           <div className='graph_animi w-[100%] max-w-[100%] flex justify-center md:pt-[20px] pt-[40px    .graph_animi #lottie] mt-[-300px]'>
                   <Player
                     autoplay
                     loop

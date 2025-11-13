@@ -68,14 +68,14 @@ export default function Footer() {
 
             <div className='address flex xl:gap-[144px] lg:gap-[70px] md:gap-[50px] gap-[20px]  2xl:mt-[144px] xl:mt-[110px] lg:mt-[80px] md:mt-[60px] mt-[40px]'>
               <div className='w-[100%] max-w-[233px]'>
-                <h3 className='xl:text-[42px] lg:text-[30px] text-[28px] leading-[114%] text-[#fff] mb-[10px]'>Minneapolis</h3>
-                <p className='font-normal lg:text-[18px] text-[16px] leading-[142%] text-[#fff] w-[100%] max-w-[194px]'>
+                <h3 className='xl:text-[42px] lg:text-[30px] md:text-[28px] text-[23px] leading-[114%] text-[#fff] mb-[10px]'>Minneapolis</h3>
+                <p className='font-normal lg:text-[18px] md:text-[16px] text-[14px] leading-[142%] text-[#fff] w-[100%] max-w-[194px]'>
                   7760 France Ave South Suite 1100 Bloomington, MN 55435
                 </p>
               </div>
               <div className='w-[100%] max-w-[206px]'>
-                <h3 className='xl:text-[42px] lg:text-[30px] text-[28px] leading-[114%] text-[#fff] mb-[10px]'>New York</h3>
-                <p className='lg:text-[18px] text-[16px] font-normal leading-[142%] text-[#fff]'>
+                <h3 className='xl:text-[42px] lg:text-[30px] md:text-[28px] text-[23px] leading-[114%] text-[#fff] mb-[10px]'>New York</h3>
+                <p className='lg:text-[18px] md:text-[16px] text-[14px] font-normal leading-[142%] text-[#fff]'>
                   2 Robert Speck Parkway Suite 750 Mississauga, Ontario L4Z 1H8, Canada
                 </p>
               </div>

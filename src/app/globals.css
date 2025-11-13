@@ -663,9 +663,9 @@ video {
 }
 
 @media (max-width: 600px) {
-    .brand-item {
+.brand-item {
         height: 89px;
-    }
+}
 .team-animi{
     gap: 10px !important;
   }

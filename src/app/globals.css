@@ -652,6 +652,12 @@ video {
 }
 
 @media (max-width: 768px) {
+      .ideas_section:before {
+display: none;
+    }
+    .ideas_section:after {
+display: none;
+    }
 .mobile-animi div {
   width: 100% !important;
   max-width: 100% !important;

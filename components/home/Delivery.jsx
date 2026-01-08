@@ -1,369 +1,53 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import Image from "next/image";
-import { useState, useEffect } from "react";
-// Dynamically import the Lottie Player to avoid SSR issues
-const Player = dynamic(
-  () => import("@lottiefiles/react-lottie-player").then((mod) => mod.Player),
-  { ssr: false }
-);
 
 export default function Delivery() {
-  const [showAlternate, setShowAlternate] = useState(false);
 
-  // Auto-cycle through animation pattern every 2 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowAlternate((prev) => !prev);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <section className="relative bg-white py-20 lg:py-[120px]">
       <div className="w-full max-w-[1200px] mx-auto ">
         <h2 className="lg:text-[42px] md:text-[38px] text-[32px] font-semibold leading-normal md:px-0 px-5 text-black w-full max-w-[551px] text-center mx-auto lg:pb-16 md:pb-[50px] pb-8">
-          Reliable Delivery with Proven Execution
+          Reliable EWR Airport Car and Limo Service
         </h2>
         <div className="w-full max-w-[1122px] mx-auto flex gap-[50px] justify-center lg:flex-row flex-wrap xl:px-0 px-5">
           <div className="w-full xl:max-w-[531px] lg:max-w-[450px] max-w-[400px] flex flex-col gap-[39px]">
-            <div className="w-full max-w-full bg-[#DFDFDF] rounded-[20px] pt-[60px] pb-0 transition-all duration-300 overflow-hidden">
-              <h2 className="lg:text-[32px] text-[28px] font-semibold leading-[45px] text-black text-center relativez z-2 w-full max-w-[300px] mx-auto mb-[15px]">
-                QA Testing & Automation
-              </h2>
+            <div className="w-full max-w-full bg-[#DFDFDF] rounded-[20px] pt-[60px] pb-[60px] transition-all duration-300 overflow-hidden">
+              <h3 className="lg:text-[32px] text-[28px] font-semibold leading-[45px] text-black text-center relativez z-2 w-full max-w-[300px] mx-auto mb-[15px]">
+                Newark Airport Car Service
+              </h3>
               <p className="text-[16px] text-[#626262] w-full max-w-[333px] mx-auto text-center relative z-2 leading-normal ">
-                Ensure flawless performance through rigorous manual and
-                automated testing, ensuring high-quality software releases that
-                are fast and reliable
+                Looking for a dependable <strong>EWR airport car service</strong> near Newark Liberty International Airport? Our professional EWR limo service offers on-time, luxury transportation to and from Newark Airport, NYC, and surrounding New Jersey areas, making airport travel smooth and stress-free. With experienced chauffeurs, a fleet of luxury sedans and SUVs, and 24/7 availability, we are a trusted choice for Newark airport transfers, corporate travel, and private transportation. We proudly serve Newark, Jersey City, Hoboken, Manhattan, and all nearby NJ cities, delivering safe, reliable, and comfortable rides every time.
               </p>
-              <div className="w-full max-w-full flex justify-center lg:pt-[100px] pt-[50px] testing-animi">
-                <div
-                  style={{
-                    width: "400px",
-                    height: "395px",
-                    overflow: "hidden",
-                    borderRadius: "20px",
-                    backgroundColor: "#DFDFDF",
-                  }}
-                >
-                  <video
-                    src="/brand.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    style={{
-                      display: "block",
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "contain",
-                      backgroundColor: "#DFDFDF",
-                      transform: "translateZ(0)", // optional: smooths flicker on Chrome/Safari
-                    }}
-                  />
-                </div>
-              </div>
             </div>
-            <div className="w-full max-w-full bg-[#DFDFDF] rounded-[20px] pt-[60px] pb-0 transition-all duration-300 overflow-hidden">
-              <h2 className="lg:text-[32px] text-[28px] font-semibold leading-[45px]  text-black text-center relativez z-2 w-full max-w-[300px]  mx-auto mb-[15px]">
-                SAP Point-to-Point Integration
-              </h2>
+            <div className="w-full max-w-full bg-[#DFDFDF] rounded-[20px] pt-[60px] md:pb-[60px] pb-[30px] transition-all duration-300 overflow-hidden">
+              <h3 className="lg:text-[32px] text-[28px] font-semibold leading-[45px]  text-black text-center relativez z-2 w-full max-w-[300px]  mx-auto mb-[15px]">
+                Comfortable & Stress-Free Airport Transfers
+              </h3>
               <p className="text-[16px] text-[#626262] w-full max-w-[333px] mx-auto text-center relative z-2 leading-normal integration-text">
-                Streamline complex data flows with secure, real- time
-                integrations for SAP systems, enhancing accuracy and operational
-                efficiency
+                Skip the hassle of traffic, long parking lines, and crowded airport shuttles. Our <strong>EWR Airport Car Service</strong> provides a smooth, door-to-door experience in luxury sedans, SUVs, and limousines, perfect for business travelers, families, and groups. We track your flight in real time to ensure on-time pickups and drop-offs, so you never have to worry about delays. With professional chauffeurs, 24/7 availability, and flat-rate pricing, every trip is safe, reliable, and relaxing. Whether you’re traveling to Manhattan, Jersey City, or anywhere in New Jersey, we make your airport transfer seamless and stress-free.
               </p>
-              <div className="graph_animi w-full max-w-full flex justify-center md:pt-5 pt-[40px    .graph_animi #lottie] mt-[-300px]">
-                <Player
-                  autoplay
-                  loop
-                  src="/graph.json"
-                  style={{ height: "655px", width: "628px" }}
-                />
-              </div>
             </div>
           </div>
 
           <div className="w-full xl:max-w-[531px] lg:max-w-[450px] max-w-[400px] flex flex-col gap-[39px]">
-            <div className="w-full max-w-full bg-[#DFDFDF] rounded-[20px] pt-[60px] pb-0 transition-all duration-300 overflow-hidden">
-              <h2 className="lg:text-[32px] text-[28px] font-semibold leading-[45px] text-black text-center relativez z-2 w-full max-w-[300px] mx-auto mb-[15px]">
-                Al Development
-              </h2>
+            <div className="w-full max-w-full bg-[#DFDFDF] rounded-[20px] pt-[60px] pb-[60px] transition-all duration-300 overflow-hidden">
+              <h3 className="lg:text-[32px] text-[28px] font-semibold leading-[45px] text-black text-center relativez z-2 w-full max-w-[300px] mx-auto mb-[15px]">
+                Newark Airport Limo Service
+              </h3>
               <p className="text-[16px] text-[#626262] w-full max-w-[333px] mx-auto text-center relative z-2 leading-normal">
-                Apply advanced Al models to automate workflows, improve
-                decision-making, and create new avenues for business growth.
+                <strong>Newark Airport Limo Service</strong> offers reliable, luxury transportation to and from Newark Liberty International Airport, ensuring a smooth, comfortable, and stress-free travel experience. Whether you’re traveling for business or leisure, our professional chauffeurs, punctual service, and premium vehicles provide safe, on-time airport transfers with door-to-door convenience. We specialize in private airport pickups, corporate travel, group transportation, and executive limo services, delivering comfort, reliability, and exceptional customer service every time.
               </p>
-              <div className="w-full max-w-full flex justify-center pt-[100px]">
-                {/* Custom Brand Animation */}
-                <div className="service-card-anim-block-set w-full max-w-full">
-                  {/* First Row */}
-                  <div className="first-line-brand mb-2">
-                    {/* First row: 1st item - no animation (single image) */}
-                    <div className="brand-item first">
-                      <Image
-                        src="/firstgp.png"
-                        width={250}
-                        height={252}
-                        alt="Brand"
-                        className="brand-item-img"
-                        quality={100}
-                        unoptimized
-                      />
-                    </div>
-                    {/* First row: 2nd item - animates when showAlternate is true */}
-                    <div className="brand-item">
-                      <Image
-                        src="/secgrouptwo.png"
-                        width={250}
-                        height={252}
-                        alt="Brand"
-                        className="brand-item-img"
-                        quality={100}
-                        unoptimized
-                        style={{
-                          opacity: !showAlternate ? 1 : 0,
-                          transition: "opacity 1s ease-in-out",
-                          position: "absolute",
-                          top: "50%",
-                          left: "50%",
-                          transform: "translate(-50%, -50%)",
-                        }}
-                      />
-                      <Image
-                        src="/secgrouptwosec.png"
-                        width={250}
-                        height={252}
-                        alt="Brand"
-                        className="brand-item-img"
-                        quality={100}
-                        unoptimized
-                        style={{
-                          opacity: showAlternate ? 1 : 0,
-                          transition: "opacity 1s ease-in-out",
-                          position: "absolute",
-                          top: "50%",
-                          left: "50%",
-                          transform: "translate(-50%, -50%)",
-                        }}
-                      />
-                    </div>
-                    {/* First row: 3rd item - animates when showAlternate is false */}
-                    <div className="brand-item">
-                      <Image
-                        src="/thirdgp.png"
-                        width={250}
-                        height={252}
-                        alt="Brand"
-                        className="brand-item-img"
-                        quality={100}
-                        unoptimized
-                        style={{
-                          opacity: !showAlternate ? 1 : 0,
-                          transition: "opacity 1s ease-in-out",
-                          position: "absolute",
-                          top: "50%",
-                          left: "50%",
-                          transform: "translate(-50%, -50%)",
-                        }}
-                      />
-                      <Image
-                        src="/thirdgptwo.png"
-                        width={250}
-                        height={252}
-                        alt="Brand"
-                        className="brand-item-img"
-                        quality={100}
-                        unoptimized
-                        style={{
-                          opacity: showAlternate ? 1 : 0,
-                          transition: "opacity 1s ease-in-out",
-                          position: "absolute",
-                          top: "50%",
-                          left: "50%",
-                          transform: "translate(-50%, -50%)",
-                        }}
-                      />
-                    </div>
-                    {/* First row: 4th item - no animation (single image) */}
-                    <div className="brand-item">
-                      <Image
-                        src="/deeroff.png"
-                        width={250}
-                        height={252}
-                        alt="Brand"
-                        className="brand-item-img"
-                        quality={100}
-                        unoptimized
-                      />
-                    </div>
-                  </div>
-
-                  {/* Second Row */}
-                  <div className="first-line-brand">
-                    {/* Second row: 1st item - animates when showAlternate is false */}
-                    <div className="brand-item">
-                      <Image
-                        src="/fifthgp.png"
-                        width={250}
-                        height={252}
-                        alt="Brand"
-                        className="brand-item-img"
-                        quality={100}
-                        unoptimized
-                        style={{
-                          opacity: !showAlternate ? 1 : 0,
-                          transition: "opacity 1s ease-in-out",
-                          position: "absolute",
-                          top: "50%",
-                          left: "50%",
-                          transform: "translate(-50%, -50%)",
-                        }}
-                      />
-                      <Image
-                        src="/fifthgps.png"
-                        width={250}
-                        height={252}
-                        alt="Brand"
-                        className="brand-item-img"
-                        quality={100}
-                        unoptimized
-                        style={{
-                          opacity: showAlternate ? 1 : 0,
-                          transition: "opacity 1s ease-in-out",
-                          position: "absolute",
-                          top: "50%",
-                          left: "50%",
-                          transform: "translate(-50%, -50%)",
-                        }}
-                      />
-                    </div>
-                    {/* Second row: 2nd item - no animation (single image) */}
-                    <div className="brand-item">
-                      <Image
-                        src="/sixthgp.png"
-                        width={250}
-                        height={252}
-                        alt="Brand"
-                        className="brand-item-img"
-                        quality={100}
-                        unoptimized
-                      />
-                    </div>
-                    {/* Second row: 3rd item - default is seventhgpsec, alternate is seventhgp */}
-                    <div className="brand-item">
-                      <Image
-                        src="/seventhgpsec.png"
-                        width={125}
-                        height={126}
-                        alt="Brand"
-                        className="brand-item-img"
-                        quality={100}
-                        sizes="125px"
-                        style={{
-                          opacity: !showAlternate ? 1 : 0,
-                          transition: "opacity 1s ease-in-out",
-                          position: "absolute",
-                          top: "50%",
-                          left: "50%",
-                          transform: "translate(-50%, -50%)",
-                        }}
-                      />
-                      <Image
-                        src="/seventhgp.png"
-                        width={125}
-                        height={126}
-                        alt="Brand"
-                        className="brand-item-img"
-                        quality={100}
-                        sizes="125px"
-                        style={{
-                          opacity: showAlternate ? 1 : 0,
-                          transition: "opacity 1s ease-in-out",
-                          position: "absolute",
-                          top: "50%",
-                          left: "50%",
-                          transform: "translate(-50%, -50%)",
-                        }}
-                      />
-                    </div>
-                    {/* Second row: 4th item (last) - animates when showAlternate is false */}
-                    <div className="brand-item">
-                      <Image
-                        src="/eigthgp.png"
-                        width={250}
-                        height={252}
-                        alt="Brand"
-                        className="brand-item-img"
-                        quality={100}
-                        unoptimized
-                        style={{
-                          opacity: !showAlternate ? 1 : 0,
-                          transition: "opacity 1s ease-in-out",
-                          position: "absolute",
-                          top: "50%",
-                          left: "50%",
-                          transform: "translate(-50%, -50%)",
-                        }}
-                      />
-                      <Image
-                        src="/eightgpsec.png"
-                        width={250}
-                        height={252}
-                        alt="Brand"
-                        className="brand-item-img"
-                        quality={100}
-                        unoptimized
-                        style={{
-                          opacity: showAlternate ? 1 : 0,
-                          transition: "opacity 1s ease-in-out",
-                          position: "absolute",
-                          top: "50%",
-                          left: "50%",
-                          transform: "translate(-50%, -50%)",
-                        }}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
 
-            <div className="w-full max-w-full bg-[#DFDFDF] rounded-[20px] pt-[45px] pb-[15px] transition-all duration-300 overflow-hidden">
-              <h2 className="lg:text-[32px] text-[28px] font-semibold leading-[45px]  text-black text-center relativez z-2 w-full max-w-[300px]  mx-auto mb-[15px]">
-                Full-Stack Development
-              </h2>
+            <div className="w-full max-w-full bg-[#DFDFDF] rounded-[20px] pt-[45px] pb-[60px] transition-all duration-300 overflow-hidden">
+              <h3 className="lg:text-[32px] text-[28px] font-semibold leading-[45px]  text-black text-center relativez z-2 w-full max-w-[300px]  mx-auto mb-[15px]">
+                Your Trusted Newark Airport Limo Service
+              </h3>
               <p className="text-[16px] text-[#626262] w-full max-w-[333px] mx-auto text-center md:px-0 px-2.5 relative z-2 leading-normal">
-                Empower your projects with secure, scalable web and mobile
-                solutions built using end-to-end expertise across front-end,
-                back-end, and database frameworks.
+                <strong>Your Trusted Newark Airport Limo Service</strong> provides dependable, luxury transportation to and from Newark Liberty International Airport for travelers who value comfort, punctuality, and professionalism. We specialize in private airport transfers, corporate limo services, and group transportation, offering clean, modern vehicles driven by experienced chauffeurs. Whether you need a reliable airport pickup, executive travel solution, or stress-free ride to your destination, our Newark Airport limo service ensures on-time arrivals, door-to-door convenience, and a premium travel experience every time.
               </p>
-              <div className="w-full max-w-full flex justify-center pt-5 lg:mt-[60px] md:mt-[50px] mt-0 dev-animi md:pb-0 pb-5">
-                <div
-                  style={{
-                    width: "469px",
-                    height: "498px",
-                    overflow: "hidden",
-                    borderRadius: "20px",
-                    backgroundColor: "#DFDFDF",
-                  }}
-                >
-                  <video
-                    src="/dev.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    style={{
-                      display: "block",
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "contain",
-                      backgroundColor: "#DFDFDF",
-                    }}
-                  />
-                </div>
-              </div>
             </div>
           </div>
         </div>

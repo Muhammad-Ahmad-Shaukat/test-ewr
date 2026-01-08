@@ -314,12 +314,11 @@ const ExpertKnowledge = () => {
       <div className="max-w-4xl w-full">
         {/* Header */}
         <div className="text-center md:mb-5 mb-10">
-          <h1 className="text-[22px] leading-[114%] text-[#131316] mb-[13px] font-medium text-left">
-            Expert Knowledge
-          </h1>
+          <h3 className="text-[22px] leading-[114%] text-[#131316] mb-[13px] font-medium text-left">
+            Expert Chauffeurs
+          </h3>
           <p className="text-[16px] leading-[145%] text-[#131316] text-left font-normal">
-            Engineers with the expertise to deliver dependable, high-performance
-            solutions
+            Experience luxury airport transportation services with our EWR limo service. We provide reliable, comfortable, and on-time rides to and from Newark Liberty Airport, NYC, and surrounding New Jersey areas, ensuring a seamless travel experience with professional chauffeurs and high-end vehicles.
           </p>
         </div>
 

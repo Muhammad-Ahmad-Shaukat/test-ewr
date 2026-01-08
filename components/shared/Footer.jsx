@@ -18,7 +18,7 @@ export default function Footer() {
     <section className="footer bg-[#131316] 2xl:pt-[98px] pt-[60px]  2xl:pb-[109px] pb-[90px] 2xl:px-[119px] xl:px-[70px] lg:px-[50px] md:px-10 px-5">
       <div className="w-full max-w-[1920px] mx-auto ">
         <h2 className="font-medium leading-[114%] text-[#F3EBE2] lg:text-[14vw] xl:text-[10vw] 2xl:text-[8vw] text-[7vw] whitespace-nowrap xl:mb-0 mb-[30px]">
-          Lets connect
+          Book Now
         </h2>
 
         <div className="flex justify-between md:flex-row flex-col-reverse">
@@ -30,7 +30,7 @@ export default function Footer() {
               href="mailto:"
               className="border-b-white md:mb-10 mb-5 font-medium text-[18px] leading-[114%] block text-white"
             >
-              Schedule a Call
+              Make Reservation Online
             </Link>
             <div className="soical_icon md:mb-[82px] mb-[30px]">
               <Image src="/link.svg" width={46} height={46} alt="LinkedIn" />
@@ -75,7 +75,7 @@ export default function Footer() {
                   href="#"
                   className="font-normal text-[18px] leading-[142%] text-white"
                 >
-                  Services
+                  Our Services
                 </Link>
               </li>
               <li>
@@ -83,7 +83,7 @@ export default function Footer() {
                   href="#"
                   className="font-normal text-[18px] leading-[142%] text-white"
                 >
-                  Case Study
+                  Our Fleet
                 </Link>
               </li>
               <li>
@@ -91,7 +91,7 @@ export default function Footer() {
                   href="#"
                   className="font-normal text-[18px] leading-[142%] text-white"
                 >
-                  Our Team
+                  Book Online
                 </Link>
               </li>
               <li>
@@ -99,27 +99,18 @@ export default function Footer() {
                   href="#"
                   className="font-normal text-[18px] leading-[142%] text-white"
                 >
-                  Careers
+                  Call Us Now
                 </Link>
               </li>
             </ul>
 
             <div className="address flex xl:gap-36 lg:gap-[70px] md:gap-[50px] gap-5  2xl:mt-36 xl:mt-[110px] lg:mt-20 md:mt-[60px] mt-10">
-              <div className="w-full max-w-[233px]">
-                <h3 className="xl:text-[42px] lg:text-[30px] md:text-[28px] text-[23px] leading-[114%] text-white mb-2.5">
-                  Minneapolis
-                </h3>
-                <p className="font-normal lg:text-[18px] md:text-[16px] text-[14px] leading-[142%] text-white w-full max-w-[194px]">
-                  7760 France Ave South Suite 1100 Bloomington, MN 55435
-                </p>
-              </div>
               <div className="w-full max-w-[206px]">
-                <h3 className="xl:text-[42px] lg:text-[30px] md:text-[28px] text-[23px] leading-[114%] text-white mb-2.5">
-                  New York
+                <h3 className="xl:text-[42px] lg:text-[30px] md:text-[28px] text-[23px] leading-[114%] text-white mb-2.5 whitespace-nowrap">
+                  New Jersey
                 </h3>
                 <p className="lg:text-[18px] md:text-[16px] text-[14px] font-normal leading-[142%] text-white">
-                  2 Robert Speck Parkway Suite 750 Mississauga, Ontario L4Z 1H8,
-                  Canada
+                  118 East Lincoln Ave, Roselle Park, New Jersey, United States
                 </p>
               </div>
             </div>

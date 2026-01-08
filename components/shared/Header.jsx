@@ -10,7 +10,7 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 50); // Trigger sticky behavior after 50px scroll
+      setIsScrolled(scrollTop > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -23,22 +23,19 @@ export default function Header() {
   return (
     <>
       <header
-        className={`desktop_header w-full not_scrolled z-99 max-w-full pt-[23px] bg-[#F6F6F6] transition-all duration-300 ${
-          isScrolled ? "fixed top-0 z-50 pt-2.5" : "fixed top-0 pt-2.5 z-50"
-        }`}
+        className={`desktop_header w-full not_scrolled z-99 max-w-full pt-[23px] bg-[#F6F6F6] transition-all duration-300 ${isScrolled ? "fixed top-0 z-50 pt-2.5" : "fixed top-0 pt-2.5 z-50"
+          }`}
       >
         <div
-          className={`w-full mx-auto bg-white rounded-[10px] flex pl-4 pr-1.5 py-1.5 items-center shadow-sm transition-all duration-150 overflow-hidden ${
-            isScrolled ? "max-w-[341px] gap-5" : "max-w-[638px] gap-[35px]"
-          }`}
+          className={`group w-full mx-auto bg-white rounded-[10px] flex pl-4 pr-1.5 py-1.5 items-center shadow-sm transition-all duration-500 overflow-hidden hover:max-w-[650px] hover:gap-[35px] ${isScrolled ? "max-w-[341px] gap-5" : "max-w-[650px] gap-[35px]"
+            }`}
         >
           <div className="Logo shrink-0">
             <Image src="/Logo.svg" alt="Logo" width={49} height={45} />
           </div>
           <nav
-            className={`transition-all duration-150 overflow-hidden ${
-              isScrolled ? "hidden" : "max-w-full opacity-100 translate-x-0"
-            }`}
+            className={`transition-all duration-500 overflow-hidden whitespace-nowrap ${isScrolled ? "max-w-0 opacity-0 group-hover:max-w-full group-hover:opacity-100" : "max-w-full opacity-100 translate-x-0"
+              }`}
           >
             <ul className="flex gap-[29px]">
               <li className="nav-item">
@@ -69,10 +66,10 @@ export default function Header() {
                 <Link href="/case-study" className="nav-link w-inline-block">
                   <div className="nav-flip-hover">
                     <div className="nav-link-text nav font-medium text-[14px] leading-normal text-black">
-                      Case Study
+                      Our Fleet
                     </div>
                     <div className="nav-link-text hover font-medium text-[14px] leading-normal text-black">
-                      Case Study
+                      Our Fleet
                     </div>
                   </div>
                 </Link>
@@ -81,22 +78,10 @@ export default function Header() {
                 <Link href="/our-team" className="nav-link w-inline-block">
                   <div className="nav-flip-hover">
                     <div className="nav-link-text nav font-medium text-[14px] leading-normal text-black">
-                      Our Team
+                      About Us
                     </div>
                     <div className="nav-link-text hover font-medium text-[14px] leading-normal text-black">
-                      Our Team
-                    </div>
-                  </div>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="/careers" className="nav-link w-inline-block">
-                  <div className="nav-flip-hover">
-                    <div className="nav-link-text nav font-medium text-[14px] leading-normal text-black">
-                      Careers
-                    </div>
-                    <div className="nav-link-text hover font-medium text-[14px] leading-normal text-black">
-                      Careers
+                      About Us
                     </div>
                   </div>
                 </Link>
@@ -104,25 +89,19 @@ export default function Header() {
             </ul>
           </nav>
           <div
-            className={`contact_button shrink-0 ml-auto transition-all duration-150 relative ${
-              isScrolled ? "flex gap-2" : "block"
-            }`}
+            className={`contact_button shrink-0 ml-auto transition-all duration-150 relative flex gap-2`}
           >
             <Link
               href=""
-              className={`font-medium text-[12px] leading-normal text-white bg-[#404040] tracking-[0.2px] px-3 py-4 rounded-[10px] transition-all duration-150 ${
-                isScrolled
-                  ? "opacity-100 translate-x-0 relative"
-                  : "opacity-0 translate-x-full pointer-events-none absolute"
-              }`}
+              className={`font-medium text-[12px] leading-normal text-white bg-[#404040] tracking-[0.2px] px-3 py-4 rounded-[10px] transition-all duration-150 opacity-100 translate-x-0 relative`}
             >
-              Book a Call
+              Call Us Now
             </Link>
             <Link
               href=""
               className={`font-medium text-[12px] leading-normal text-white bg-[#148AFF] tracking-[0.2px] px-3 py-4 rounded-[10px] transition-all duration-150`}
             >
-              Schedule Call
+              Book Online
             </Link>
           </div>
         </div>
@@ -142,23 +121,20 @@ export default function Header() {
               aria-label="Toggle mobile menu"
             >
               <div
-                className={`burger-line first absolute transition-all duration-300 ${
-                  isMobileMenuOpen ? "rotate-45" : "rotate-0 -translate-y-[3px]"
-                }`}
+                className={`burger-line first absolute transition-all duration-300 ${isMobileMenuOpen ? "rotate-45" : "rotate-0 -translate-y-[3px]"
+                  }`}
               ></div>
               <div
-                className={`burger-line second absolute transition-all duration-300 ${
-                  isMobileMenuOpen ? "-rotate-45" : "rotate-0 translate-y-[3px]"
-                }`}
+                className={`burger-line second absolute transition-all duration-300 ${isMobileMenuOpen ? "-rotate-45" : "rotate-0 translate-y-[3px]"
+                  }`}
               ></div>
             </button>
           </div>
           <div
-            className={`mobile_menu absolute top-full left-0 w-full bg-[#F6F6F6] overflow-hidden transition-all duration-300 ease-in-out z-50 ${
-              isMobileMenuOpen
-                ? "max-h-[500px] opacity-100"
-                : "max-h-0 opacity-0"
-            }`}
+            className={`mobile_menu absolute top-full left-0 w-full bg-[#F6F6F6] overflow-hidden transition-all duration-300 ease-in-out z-50 ${isMobileMenuOpen
+              ? "max-h-[500px] opacity-100"
+              : "max-h-0 opacity-0"
+              }`}
           >
             <ul className="flex flex-col px-4 pb-5 pt-2.5">
               <li>

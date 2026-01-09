@@ -31,7 +31,7 @@ export default function Header() {
             }`}
         >
           <div className="Logo shrink-0">
-            <Image src="/Logo.svg" alt="Logo" width={49} height={45} />
+            <Image src="/ewr.png" alt="Logo" width={49} height={45} />
           </div>
           <nav
             className={`transition-all duration-500 overflow-hidden whitespace-nowrap ${isScrolled ? "max-w-0 opacity-0 group-hover:max-w-full group-hover:opacity-100" : "max-w-full opacity-100 translate-x-0"

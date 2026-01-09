@@ -27,11 +27,11 @@ export default function Header() {
           }`}
       >
         <div
-          className={`group w-full mx-auto bg-white rounded-[10px] flex pl-4 pr-1.5 py-1.5 items-center shadow-sm transition-all duration-500 overflow-hidden hover:max-w-[800px] hover:gap-[35px] ${isScrolled ? "max-w-[410px] gap-5" : "max-w-[800px] gap-[35px]"
+          className={`group w-full mx-auto bg-white rounded-[10px] flex pl-4 pr-1.5 py-3 items-center shadow-sm transition-all duration-500 overflow-hidden hover:max-w-[850px] hover:gap-[35px] ${isScrolled ? "max-w-[440px] gap-5" : "max-w-[850px] gap-[35px]"
             }`}
         >
           <div className="Logo shrink-0">
-            <Image src="/ewr.png" alt="Logo" width={100} height={92} quality={100} />
+            <Image src="/ewr.png" alt="Logo" width={120} height={110} quality={100} />
           </div>
           <nav
             className={`transition-all duration-500 overflow-hidden whitespace-nowrap ${isScrolled ? "max-w-0 opacity-0 group-hover:max-w-full group-hover:opacity-100" : "max-w-full opacity-100 translate-x-0"
@@ -107,13 +107,13 @@ export default function Header() {
         </div>
       </header>
       {/* Spacer to maintain layout when header becomes fixed - desktop only */}
-      {isScrolled && <div className="h-[88px] desktop_spacer"></div>}
+      {isScrolled && <div className="h-[160px] desktop_spacer"></div>}
 
       <div className="mobile_header">
         <header className="w-full max-w-full bg-[#F6F6F6] relative z-50">
           <div className="flex items-center justify-between px-4 py-2.5">
             <div className="mobile_logo">
-              <Image src="/ewr.png" alt="Logo" width={100} height={92} quality={100} />
+              <Image src="/ewr.png" alt="Logo" width={120} height={110} quality={100} />
             </div>
             <button
               className="hamburger_icon cursor-pointer flex flex-col justify-center items-center w-[30px] h-[30px] relative focus:outline-none"

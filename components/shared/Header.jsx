@@ -27,7 +27,7 @@ export default function Header() {
           }`}
       >
         <div
-          className={`group w-full mx-auto bg-white rounded-[10px] flex pl-4 pr-1.5 py-1.5 items-center shadow-sm transition-all duration-500 overflow-hidden hover:max-w-[720px] hover:gap-[35px] ${isScrolled ? "max-w-[410px] gap-5" : "max-w-[720px] gap-[35px]"
+          className={`group w-full mx-auto bg-white rounded-[10px] flex pl-4 pr-1.5 py-1.5 items-center shadow-sm transition-all duration-500 overflow-hidden hover:max-w-[800px] hover:gap-[35px] ${isScrolled ? "max-w-[410px] gap-5" : "max-w-[800px] gap-[35px]"
             }`}
         >
           <div className="Logo shrink-0">
